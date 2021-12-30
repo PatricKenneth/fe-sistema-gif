@@ -1,11 +1,22 @@
 import React from 'react';
+import { LocalizationProvider } from '@mui/lab';
+import AdapterDateFns from '@mui/lab/AdapterDateFns';
+import ptLocale from 'date-fns/locale/pt-BR';
+import { ThemeProvider } from '@mui/material';
 import ReactDOM from 'react-dom';
 import Home from './pages/Home';
 import reportWebVitals from './reportWebVitals';
+import { GlobalStyle } from './styles/global';
+import theme from './theme/theme';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Home />
+    <ThemeProvider theme={theme}>
+      <LocalizationProvider dateAdapter={AdapterDateFns} locale={ptLocale}>
+        <GlobalStyle />
+        <Home />
+      </LocalizationProvider>
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

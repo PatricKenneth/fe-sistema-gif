@@ -3,7 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@mui/icons-material": "^5.2.5",
+    "@mui/lab": "^5.0.0-alpha.62",
     "@mui/material": "^5.2.6",
+    "@mui/styled-engine": "npm:@mui/styled-engine-sc@latest",
+    "@mui/x-data-grid": "^5.2.1",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
     "@testing-library/user-event": "^13.2.1",
@@ -11,11 +15,21 @@
     "@types/node": "^16.7.13",
     "@types/react": "^17.0.20",
     "@types/react-dom": "^17.0.9",
+    "@types/styled-components": "^5.1.19",
+    "axios": "^0.24.0",
+    "date-fns": "^2.28.0",
+    "formik": "^2.2.9",
+    "moment": "^2.29.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
+    "styled-components": "^5.3.3",
     "typescript": "^4.4.2",
-    "web-vitals": "^2.1.0"
+    "web-vitals": "^2.1.0",
+    "yup": "^0.32.11"
+  },
+  "resolutions": {
+    "@mui/styled-engine": "npm:@mui/styled-engine-sc@latest"
   },
   "scripts": {
     "start": "react-scripts start",
